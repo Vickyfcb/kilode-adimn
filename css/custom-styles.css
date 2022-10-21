@@ -323,9 +323,9 @@ select:focus,
 	height: 3rem;
 	border-radius: 50%;
 }
-/* #example_filter{
+#example_filter{
 	display: none !important;
-} */
+}
 
 
 table.dataTable thead th {
