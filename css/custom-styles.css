@@ -515,12 +515,12 @@ select option {
 
 /* Pagination Section */
 .pagination {
-	display: flex ;
+	display: flex;
 	justify-content: center;
 }
 
 .pagination a {
-	color: #868387 ;
+	color: #868387;
 	/* float: center; */
 	padding: 8px 16px;
 	text-decoration: none;
@@ -542,17 +542,18 @@ select option {
 .pagination a:hover:not(.active) {
 	background-color: #ddd;
 }
-.page-icon{
+
+.page-icon {
 	border: none !important;
 }
 
 
-
-
-
-
-
-
+/* -----------User Panel Page Content----------- */
+.table-header {
+	font-weight: 400;
+	font-size: 18px;
+	color: #000;
+}
 
 
 
@@ -570,9 +571,6 @@ select option {
 		display: none !important;
 	}
 
-}
-
-@media (min-width: 768px) {
 	.accordion {
 		/* background-color: #DDF3F3; */
 
@@ -585,11 +583,11 @@ select option {
 
 	.accordion:after,
 	.active:after {
-		display: none !important;
+		/* display: none !important; */
 	}
 
 	.panel {
-		display: none !important;
+		/* display: none !important; */
 	}
 
 	.email,
@@ -602,7 +600,7 @@ select option {
 	}
 
 	.accordion {
-		width: 100% !important;
+		width: 90% !important;
 	}
 
 	.table-row {
@@ -622,13 +620,77 @@ select option {
 	}
 
 	.table-avatar {
+		display: none !important;
+
+	}
+
+
+	.user-status {
+		font-size: 10px;
+		font-weight: 400;
+		margin-left: 2rem !important;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+	.accordion:after,
+	.active:after {
+		display: block !important;
+	}
+
+	.panel {
+		display: block !important;
+
+	}
+
+	.accordion {
+		width: 100% !important;
+	}
+
+	.panel {
+		/* padding: 0 18px; */
+		background-color: #F0F0F0;
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		display: block;
+		font-size: 10px;
+		border-radius: 8px;
+		margin-top: 8px;
+		height: 331px !important;
+
+	}
+
+	.table-avatar {
 		display: flex !important;
 		width: 49px;
 		height: 49px;
 		border-radius: 50%;
 		margin-left: 22px;
 	}
+	.offCanvas-footer {
+		margin-top: 40rem;
+	}
+}
 
+@media (min-width: 1024px) {
+
+	.accordion:after,
+	.active:after {
+		display: none !important;
+	}
+
+	.panel {
+		display: none !important;
+
+	}
+
+	.accordion {
+		width: 100% !important;
+	}
+	
 	.total-card {
 		/* width: 18rem; */
 		margin-bottom: 161px;
