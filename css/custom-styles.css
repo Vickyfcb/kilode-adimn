@@ -611,6 +611,11 @@ select option {
 
 
 @media (max-width: 768px) {
+	.navbar-brand {
+		font-weight: 700;
+		font-size: 24px;
+	}
+
 	.table-avatar {
 		display: none !important;
 	}
@@ -655,7 +660,7 @@ select option {
 	}
 
 	/* -------Setting Page------------ */
-	.navbar-brand {
+	.setting-card-navbar-brand {
 		font-weight: 700 !important;
 		font-size: 16px !important;
 		/* display: block !important; */
@@ -714,6 +719,10 @@ select option {
 
 	.modal-dialog {
 		margin: 0;
+	}
+
+	.setting-card .form-control {
+		margin-bottom: 24px !important;
 	}
 }
 
@@ -797,7 +806,7 @@ select option {
 
 	.setting-nav-link {
 		font-weight: 700;
-		font-size: 16 px !important;
+		font-size: 16px !important;
 
 	}
 
@@ -813,6 +822,8 @@ select option {
 
 
 	}
+
+
 
 	.modal {
 		width: 100% !important;
