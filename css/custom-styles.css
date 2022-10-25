@@ -349,6 +349,7 @@ select option {
 .text-primary {
 	color: #028C8C !important;
 }
+
 .text-primary-dark {
 	color: #014745 !important;
 }
@@ -373,11 +374,13 @@ select option {
 	padding: .5rem 3rem;
 	color: #fff;
 }
+
 .btn-primary:hover {
 	background-color: transparent !important;
 	border: 1px solid #028C8C;
 	color: #028C8C;
 }
+
 .btn-primary-dark {
 	background-color: #014745 !important;
 	border: 1px solid #014745;
@@ -391,6 +394,7 @@ select option {
 	border: 1px solid #014745;
 	color: #014745;
 }
+
 .btn-secondary {
 	background-color: #EB5757 !important;
 	border: 1px solid #EB5757;
@@ -611,7 +615,7 @@ select option {
 		display: none !important;
 	}
 
-	
+
 	.email,
 	.status,
 	.upgrade,
@@ -650,17 +654,66 @@ select option {
 		margin-left: 2rem !important;
 	}
 
-	/* Setting Page */
+	/* -------Setting Page------------ */
+	.navbar-brand {
+		font-weight: 700 !important;
+		font-size: 16px !important;
+		/* display: block !important; */
+	}
+
 	.setting-nav-card {
 		width: 100% !important;
-		
+		height: 55px !important;
+
 	}
+
 	.setting-card {
 		/* width: 801px; */
 		/* height: 1376px; */
 		border-radius: 10px;
 		padding: 27px 24px !important;
 		border: none !important;
+	}
+
+	.edit-link {
+		font-weight: 400;
+		font-size: 12px !important;
+		color: #028C8C;
+	}
+
+	.setting-profile-img {
+		height: 66px !important;
+		width: 66px !important;
+
+	}
+
+	.setting-header {
+		font-size: 14px !important;
+	}
+
+	.setting-card input {
+		font-size: 16px !important;
+	}
+
+	.setting-nav-link {
+		font-weight: 700;
+		font-size: 13.2597px !important;
+
+	}
+
+	.active-rectangle {
+		width: 9.94px !important;
+		height: 55.03px !important;
+	}
+
+	.setting-toggler {
+		width: 7.29px !important;
+		height: 12.6px !important;
+		margin: auto 0;
+	}
+
+	.modal-dialog {
+		margin: 0;
 	}
 }
 
@@ -705,6 +758,64 @@ select option {
 
 	.offCanvas-footer {
 		margin-top: 40rem;
+	}
+
+	/* --------Setting Page------- */
+	.setting-nav-card {
+		width: 100% !important;
+		height: 55px !important;
+
+	}
+
+	.setting-card {
+		/* width: 801px; */
+		/* height: 1376px; */
+		border-radius: 10px;
+		padding: 27px 24px !important;
+		border: none !important;
+	}
+
+	.edit-link {
+		font-weight: 400;
+		font-size: 12px !important;
+		color: #028C8C;
+	}
+
+	.setting-profile-img {
+		height: 66px !important;
+		width: 66px !important;
+
+	}
+
+	.setting-header {
+		font-size: 14px !important;
+	}
+
+	.setting-card input {
+		font-size: 16px !important;
+	}
+
+	.setting-nav-link {
+		font-weight: 700;
+		font-size: 16 px !important;
+
+	}
+
+	.active-rectangle {
+		width: 9.94px !important;
+		height: 55.03px !important;
+	}
+
+	.setting-toggler {
+		width: 25px !important;
+		height: 25px !important;
+		margin: auto 0;
+
+
+	}
+
+	.modal {
+		width: 100% !important;
 	}
 }
 
@@ -761,7 +872,7 @@ select option {
 .setting-card {
 	/* width: 801px; */
 	/* height: 1376px; */
-	border: 0.6px solid #4F4F4F ;
+	border: 0.6px solid #4F4F4F;
 	border-radius: 10px;
 	padding: 27px 57px;
 }
@@ -784,7 +895,24 @@ select option {
 	border-radius: 100px;
 	margin: 32px 0;
 }
-.setting-card .form-control{
+
+.setting-card .form-control {
 	border-radius: 8px !important;
 	margin-bottom: 64px;
+}
+
+
+
+.modal-content {
+	border: none;
+}
+
+.fade {
+	transition: none !important;
+}
+
+.edit-link {
+	font-weight: 400;
+	font-size: 18px;
+	color: #028C8C;
 }

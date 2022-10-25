@@ -37,16 +37,16 @@
 	<nav class="navbar navbar-expand-lg  bg-white ">
 		<div class="container">
 			<!-- <div class="container"> -->
-			<button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+			<button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
 				data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
-					class="img-fluid navbar-toggler-icon" src="svg/toggler.svg" alt="">
+					class="img-fluid navbar-toggler-ifcon" src="svg/Icon-left.svg" alt=""><a class="navbar-brand ms-3" href="#">Settings</a>
 			</button>
 			<button class="navbar-toggle btn btn-outline-secondary me-3 d-none d-lg-flex" type="button"
 				data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
 				aria-controls="offcanvasWithBothOptions"><img class="img-fluid navbar-toggler-icon" src="svg/toggler.svg"
 					alt="">
 			</button>
-			<a class="navbar-brand" href="#">Settings</a>
+			<!-- <a class="navbar-brand" href="#">Settings</a> -->
 			<div class="collapse navbar-collapse" id="navbarScroll"></div>
 		</div>
 	</nav>
@@ -94,7 +94,16 @@
 	<div class="container">
 		<!-- Sidebar -->
 		<div class="row mt-4 mx-auto">
-			<div class="col-12 col-lg-4 mb-4">
+			<button type="button" class="btn d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<div class="card setting-nav-card">
+					<div class="d-flex">
+						<img class="img-fluid active-rectangle" src="images/Rectangle.png" alt="">
+						<h5 class="setting-nav-link my-auto ms-5">Your account</h5>
+						<img class="ms-auto setting-toggler me-3 me-lg-4" src="svg/arrow_forward.svg" alt="">
+					</div>
+				</div>
+			</button>
+			<div class="col-12 col-lg-4 mb-4 d-none d-lg-block">
 				<div class="card setting-nav-card">
 					<div class="d-flex">
 						<img class="img-fluid active-rectangle" src="images/Rectangle.png" alt="">
@@ -103,12 +112,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-lg-8">
+			<div class="col-12 col-lg-8 d-none d-lg-block">
 				<div class="card setting-card">
 					<h6 class="setting-heading">User Account</h6>
 					<div class="my-auto">
 						<img class="img-fluid setting-profile-img me-4" src="images/avatar.png" alt="">
-						<a class="text-primary" href="">Edit</a>
+						<a class=" edit-link" href="">Edit</a>
 					</div>
 					<div class="">
 						<label for="exampleFormControlInput1" class="form-label setting-header">Username</label>
@@ -140,7 +149,57 @@
 		</div>
 	</div>
 
+	<!-- Button trigger modal -->
 
+
+	<!-- Modal -->
+	<div class="container">
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content pt-4">
+					<div class="col-12 ms-3">
+						<a type="button" class="btn-cdlose" data-bs-dismiss="modal" aria-label="Close"><img class="img-fluid" src="svg/Icon-left.svg" alt=""></a>
+						<label class="fs-6 fw-bold ms-4" for="">Your Account</label>
+
+					</div>
+					<div class="card setting-card">
+						<div class="my-auto">
+							<img class="img-fluid setting-profile-img me-4" src="images/avatar.png" alt="">
+							<a class="edit-link" href="">Edit</a>
+						</div>
+						<div class="">
+							<label for="exampleFormControlInput1" class="form-label setting-header">Username</label>
+							<input type="text" class="form-control p-2" id="exampleFormControlInput1" placeholder="Hikari">
+						</div>
+						<div class="">
+							<label for="exampleFormControlInput1" class="form-label setting-header">Email</label>
+							<input type="email" class="form-control p-2" id="exampleFormControlInput1"
+								placeholder="Hikaritesss@gmail.com">
+						</div>
+						<div class="">
+							<input type="submit" class="form-control btn-primary-dark py-2 fw-bold" value="Save Changes">
+						</div>
+						<p class="setting-header text-primary-dark fw-bold pb-2">Change Password</p>
+						<div class="">
+							<label for="exampleFormControlInput1" class="form-label setting-header">New Password</label>
+							<input type="password" class="form-control p-2" id="exampleFormControlInput1" placeholder="***********">
+						</div>
+						<div class="">
+							<label for="exampleFormControlInput1" class="form-label setting-header">Re-type Password</label>
+							<input type="password" class="form-control p-2" id="exampleFormControlInput1" placeholder="***********">
+						</div>
+						<div class="">
+							<input type="submit" class="form-control btn-secondary py-2 fw-bold" value="Change Password">
+						</div>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
