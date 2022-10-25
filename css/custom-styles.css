@@ -173,6 +173,12 @@ nav .form-select {
 	padding: .5rem;
 
 }
+.navbar-toggle{
+	border-radius: 100%;
+	padding: .5rem;
+	border: none;
+
+}
 
 .navbar-toggler-icon {
 	width: 32px !important;
@@ -694,5 +700,8 @@ select option {
 	.total-card {
 		/* width: 18rem; */
 		margin-bottom: 161px;
+	}
+	.offCanvas{
+		display: block !important;
 	}
 }
