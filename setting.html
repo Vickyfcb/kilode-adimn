@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Abmin Dashboard</title>
+
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+	<!-- Loading Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- Loading Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Loading Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+	<!-- Loading Material Design Icons -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+	<!-- Loading Custom CSS -->
+	<link rel="stylesheet" href="css/custom-styles.css">
+
+
+
+<body>
+	<!-- NavBar Section -->
+	<!-- NavBar Section -->
+	<nav class="navbar navbar-expand-lg  bg-white ">
+		<div class="container">
+			<!-- <div class="container"> -->
+			<button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+					class="img-fluid navbar-toggler-icon" src="svg/toggler.svg" alt="">
+			</button>
+			<button class="navbar-toggle btn btn-outline-secondary me-3 d-none d-lg-flex" type="button"
+				data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+				aria-controls="offcanvasWithBothOptions"><img class="img-fluid navbar-toggler-icon" src="svg/toggler.svg"
+					alt="">
+			</button>
+			<a class="navbar-brand" href="#">Settings</a>
+			<div class="collapse navbar-collapse" id="navbarScroll"></div>
+		</div>
+	</nav>
+	<hr class="d-flex d-lg-none">
+
+
+	<!-- Offcanvas Section -->
+	<div class="offcanvas offcanvas-start pt-3" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+		aria-labelledby="offcanvasWithBothOptionsLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img class="img-fluid logo" src="images/logo.png"
+					alt=""></h5>
+			<span data-bs-dismiss="offcanvas" aria-label="Close"><img class="offcanvas-toggler" src="./svg/Navigation.svg"
+					alt=""></span>
+		</div>
+		<div class=" d-flex admin-profile">
+			<img class="img-fluid nav-avatar my-auto" src="images/avatar.png" alt="">
+			<p class="my-auto fs-6">Admin</p>
+		</div>
+		<div class="bg-gray offcanvas-link">
+			<a class="ps-3 " aria-current="page" href="index.html">Dashboard </a>
+		</div>
+		<div class="col-12 mt-1">
+			<select name="links" id="" size="1" onchange="window.location.href=this.value;"
+				class="form-select offcanvas-form-select py-3 ps-3 d-flex mt-2 border-0 fs-6 "
+				aria-label="Default select example">
+				<option class="offCanvas-link " selected value="user-panel.html">All Users </option>
+				<hr>
+				<option class="offCanvas-link" value="listener-panel.html">Listeners</option>
+				<option class="offCanvas-link" value="therapist-panel.html">Therapists</option>
+				<option class="offCanvas-link" value="admin-panel.html">Admin</option>
+			</select>
+		</div>
+
+		<div class="container">
+			<div class="offCanvas-footer ">
+				<a class="d-block fs-6" href="setting.html"><img class="img-fluid offCanvas-icon" src="svg/gear.svg" alt="">
+					<label for="">Setting</label></a>
+				<a class="d-block mt-3 text-red fs-6" href=""><img class="img-fluid offCanvas-icon" src="svg/logout.svg" alt="">
+					<label for="">Logout</label></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Sidebar -->
+		<div class="row mt-4 mx-auto">
+			<div class="col-12 col-lg-4 mb-4">
+				<div class="card setting-nav-card">
+					<div class="d-flex">
+						<img class="img-fluid active-rectangle" src="images/Rectangle.png" alt="">
+						<h5 class="setting-nav-link my-auto ms-5">Your account</h5>
+						<img class="ms-auto me-0 me-lg-4" src="svg/arrow_forward.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col=lg-8">
+				<div class="card setting-card">
+					<h6 class="setting-heading">User Account</h6>
+					<div class="my-auto">
+						<img class="img-fluid setting-profile-img me-4" src="images/avatar.png" alt="">
+						<a class="text-primary" href="">Edit</a>
+					</div>
+					<div class="">
+						<label for="exampleFormControlInput1" class="form-label setting-header">Username</label>
+						<input type="text" class="form-control p-3" id="exampleFormControlInput1" placeholder="Hikari">
+					</div>
+					<div class="">
+						<label for="exampleFormControlInput1" class="form-label setting-header">Email</label>
+						<input type="email" class="form-control p-3" id="exampleFormControlInput1"
+							placeholder="Hikaritesss@gmail.com">
+					</div>
+					<div class="">
+						<input type="submit" class="form-control btn-primary-dark py-3 fw-bold" value="Save Changes">
+					</div>
+					<p class="setting-header text-primary-dark fw-bold pb-2">Change Password</p>
+					<div class="">
+						<label for="exampleFormControlInput1" class="form-label setting-header">New Password</label>
+						<input type="password" class="form-control p-3" id="exampleFormControlInput1" placeholder="***********">
+					</div>
+					<div class="">
+						<label for="exampleFormControlInput1" class="form-label setting-header">Re-type Password</label>
+						<input type="password" class="form-control p-3" id="exampleFormControlInput1" placeholder="***********">
+					</div>
+					<div class="">
+						<input type="submit" class="form-control btn-secondary py-3 fw-bold" value="Change Password">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<br>
+	<br>
+
+
+
+
+	<!-- Loading Bootstrap Script -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Loading JQuery Script -->
+	<script src="./js/jquery-3.5.1.js"></script>
+
+	<!-- custom Script -->
+	<script src="./js/custom-script.js"></script>
+
+
+</body>
+
+</html>

@@ -27,7 +27,8 @@ a {
 a:hover {
 	color: #014745;
 }
-hr{
+
+hr {
 	margin: 0 !important;
 }
 
@@ -176,7 +177,8 @@ nav .form-select {
 	padding: .5rem;
 
 }
-.navbar-toggle{
+
+.navbar-toggle {
 	border-radius: 100%;
 	padding: .5rem;
 	border: none;
@@ -225,6 +227,7 @@ select option {
 
 .offCanvas-footer {
 	margin-top: 14rem;
+	border-top: 1px solid #000;
 }
 
 .offCanvas-icon {
@@ -346,6 +349,9 @@ select option {
 .text-primary {
 	color: #028C8C !important;
 }
+.text-primary-dark {
+	color: #014745 !important;
+}
 
 .text-dark-primary {
 	color: #006F6F !important;
@@ -367,11 +373,36 @@ select option {
 	padding: .5rem 3rem;
 	color: #fff;
 }
-
 .btn-primary:hover {
 	background-color: transparent !important;
 	border: 1px solid #028C8C;
 	color: #028C8C;
+}
+.btn-primary-dark {
+	background-color: #014745 !important;
+	border: 1px solid #014745;
+	border-radius: 8px;
+	padding: .5rem 3rem;
+	color: #fff;
+}
+
+.btn-primary-dark:hover {
+	background-color: transparent !important;
+	border: 1px solid #014745;
+	color: #014745;
+}
+.btn-secondary {
+	background-color: #EB5757 !important;
+	border: 1px solid #EB5757;
+	border-radius: 8px;
+	padding: .5rem 3rem;
+	color: #fff;
+}
+
+.btn-secondary:hover {
+	background-color: transparent !important;
+	border: 1px solid #EB5757;
+	color: #EB5757;
 }
 
 .btn-outline-secondary {
@@ -580,25 +611,7 @@ select option {
 		display: none !important;
 	}
 
-	.accordion {
-		/* background-color: #DDF3F3; */
-
-	}
-
-	.active,
-	.accordion:hover {
-		/* background-color: #DDF3F3; */
-	}
-
-	.accordion:after,
-	.active:after {
-		/* display: none !important; */
-	}
-
-	.panel {
-		/* display: none !important; */
-	}
-
+	
 	.email,
 	.status,
 	.upgrade,
@@ -612,9 +625,6 @@ select option {
 		width: 90% !important;
 	}
 
-	.table-row {
-		/* width: 1351px; */
-	}
 
 	.username {
 		font-family: 'Open Sans';
@@ -638,6 +648,19 @@ select option {
 		font-size: 10px;
 		font-weight: 400;
 		margin-left: 2rem !important;
+	}
+
+	/* Setting Page */
+	.setting-nav-card {
+		width: 100% !important;
+		
+	}
+	.setting-card {
+		/* width: 801px; */
+		/* height: 1376px; */
+		border-radius: 10px;
+		padding: 27px 24px !important;
+		border: none !important;
 	}
 }
 
@@ -679,6 +702,7 @@ select option {
 		border-radius: 50%;
 		margin-left: 22px;
 	}
+
 	.offCanvas-footer {
 		margin-top: 40rem;
 	}
@@ -699,12 +723,68 @@ select option {
 	.accordion {
 		width: 100% !important;
 	}
-	
+
 	.total-card {
 		/* width: 18rem; */
 		margin-bottom: 161px;
 	}
-	.offCanvas{
+
+	.offCanvas {
 		display: block !important;
 	}
+}
+
+/* Setting Page Content */
+.setting-nav-card {
+	width: 363px;
+	height: 83px;
+	border: none;
+	background: #FFFFFF;
+	/* Shadow style/03 */
+	box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25);
+	border-radius: 8px;
+}
+
+.setting-nav-link {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	/* identical to box height, or 140% */
+	color: #014745;
+}
+
+.active-rectangle {
+	width: 15px;
+	height: 83px;
+}
+
+.setting-card {
+	/* width: 801px; */
+	/* height: 1376px; */
+	border: 0.6px solid #4F4F4F ;
+	border-radius: 10px;
+	padding: 27px 57px;
+}
+
+.setting-header {
+	font-weight: 400;
+	font-size: 24px;
+	color: #868387;
+}
+
+.setting-heading {
+	font-weight: 400;
+	font-size: 16px;
+	color: #868387;
+}
+
+.setting-profile-img {
+	width: 158px;
+	height: 158px;
+	border-radius: 100px;
+	margin: 32px 0;
+}
+.setting-card .form-control{
+	border-radius: 8px !important;
+	margin-bottom: 64px;
 }
